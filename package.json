@@ -1,0 +1,14 @@
+{
+    "name": "yahonkbot",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index"
+    },
+    "author": "Evgenii Novikov <enovikov11@yandex.ru>",
+    "license": "ISC",
+    "dependencies": {
+        "node-fetch": "2.0.0"
+    }
+}

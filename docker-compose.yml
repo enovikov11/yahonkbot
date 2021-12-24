@@ -1,0 +1,9 @@
+version: "3"
+services:
+  yahonkbot:
+    build: .
+    restart: always
+    volumes:
+      - ./logs:/logs
+    environment:
+      TELEGRAM_KEY: ${TELEGRAM_KEY}
