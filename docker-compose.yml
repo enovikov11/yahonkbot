@@ -7,3 +7,4 @@ services:
       - ./logs:/logs
     environment:
       TELEGRAM_KEY: ${TELEGRAM_KEY}
+      DEBUG_DISABLE_COOLDOWN: ${DEBUG_DISABLE_COOLDOWN}

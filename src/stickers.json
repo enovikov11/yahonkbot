@@ -1,0 +1,30 @@
+{
+    "new_chat_member": {
+        "sticker": "CAACAgIAAxkBAAMGYY5hWvbeBromqzV1dsCNa6OxmcUAAqQOAALRQIBJP9t-1zbIXXIiBA",
+        "description": "HONK"
+    },
+    "new_chat_title": {
+        "sticker": "CAACAgIAAxkBAAMGYY5hWvbeBromqzV1dsCNa6OxmcUAAqQOAALRQIBJP9t-1zbIXXIiBA",
+        "description": "HONK"
+    },
+    "left_chat_participant": {
+        "sticker": "CAACAgIAAxkBAAMGYY5hWvbeBromqzV1dsCNa6OxmcUAAqQOAALRQIBJP9t-1zbIXXIiBA",
+        "description": "HONK"
+    },
+    "/honkhonk": {
+        "sticker": "CAACAgIAAxkBAAMGYY5hWvbeBromqzV1dsCNa6OxmcUAAqQOAALRQIBJP9t-1zbIXXIiBA",
+        "description": "HONK"
+    },
+    "/honk": {
+        "sticker": "CAACAgIAAxkBAAMGYY5hWvbeBromqzV1dsCNa6OxmcUAAqQOAALRQIBJP9t-1zbIXXIiBA",
+        "description": "HONK"
+    },
+    "/roll": {
+        "sticker": "CAACAgIAAxkBAAMGYY5hWvbeBromqzV1dsCNa6OxmcUAAqQOAALRQIBJP9t-1zbIXXIiBA",
+        "description": "HONK"
+    },
+    "/adhonk": {
+        "sticker": "CAACAgIAAxkBAAMGYY5hWvbeBromqzV1dsCNa6OxmcUAAqQOAALRQIBJP9t-1zbIXXIiBA",
+        "description": "HONK"
+    }
+}
