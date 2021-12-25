@@ -5,7 +5,7 @@ function isHonkAllowed(update) {
         return true;
     }
 
-    if (process.env.DEBUG_DISABLE_COOLDOWN) {
+    if (process.env.DEBUG_DISABLE_COOLDOWN === 'true') {
         return true;
     }
 

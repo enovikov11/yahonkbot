@@ -1,30 +1,36 @@
-const stickers = require('./stickers.json'), api = require('./api');
+const stickers = require('./stickers.js'), api = require('./api');
 
-async function doHonk(update) {
-    // Да, я знаю, что нужно будет декларировать /honkhonk перед /honk и мультикоманды будут баговать
-    let command = Object.keys(stickers).filter(command => update?.message?.text?.includes(command))[0];
-
+function getText(update) {
     if (update?.message?.new_chat_member) {
-        command = 'new_chat_member';
+        return '/join';
     }
 
     if (update?.message?.new_chat_title) {
-        command = 'new_chat_title';
+        return '/rename';
     }
 
     if (update?.message?.left_chat_participant) {
-        command = 'left_chat_participant';
+        return '/leave';
     }
 
-    if (update?.message?.pinned_message) {
-        command = 'pinned_message';
-    }
+    return update?.message?.text || '';
+}
 
-    await api('sendSticker', {
-        chat_id: update.message.chat.id,
-        sticker: (stickers[command] || stickers['/honk']).sticker,
-        reply_to_message_id: update?.message?.message_id
-    });
+async function doHonk(update) {
+    const text = getText(update),
+        { answers } = stickers
+            .sort((a, b) => a.command.length < b.command.length ? 1 : -1)
+            .filter(({ command }) => text.includes(command))[0]
+            || stickers[0],
+        answer = answers[Math.floor(Math.random() * answers.length)];
+
+    if (answer.sticker) {
+        await api('sendSticker', {
+            chat_id: update.message.chat.id,
+            sticker: answer.sticker,
+            reply_to_message_id: update?.message?.message_id
+        });
+    }
 }
 
 module.exports = doHonk;

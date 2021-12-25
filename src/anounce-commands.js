@@ -1,10 +1,10 @@
-const stickers = require('./stickers.json'), api = require('./api');
+const stickers = require('./stickers.js'), api = require('./api');
 
 async function anounceCommands() {
     await api('setMyCommands', {
-        commands: Object.entries(stickers)
-            .filter(([command]) => /^\//.test(command))
-            .map(([command, { description }]) => ({ command: command.replace(/^\//, ''), description }))
+        commands: stickers
+            .filter(({ description }) => description)
+            .map(({ command, description }) => ({ command, description }))
     });
 }
 
