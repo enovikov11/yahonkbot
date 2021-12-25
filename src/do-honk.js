@@ -16,6 +16,10 @@ async function doHonk(update) {
         command = 'left_chat_participant';
     }
 
+    if (update?.message?.pinned_message) {
+        command = 'pinned_message';
+    }
+
     await api('sendSticker', {
         chat_id: update.message.chat.id,
         sticker: (stickers[command] || stickers['/honk']).sticker,
