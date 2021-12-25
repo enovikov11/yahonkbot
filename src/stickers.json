@@ -1,15 +1,13 @@
 {
     "new_chat_member": {
-        "sticker": "CAACAgIAAxkBAAMGYY5hWvbeBromqzV1dsCNa6OxmcUAAqQOAALRQIBJP9t-1zbIXXIiBA",
-        "description": "HONK"
+        "sticker": "CAACAgIAAxkBAAMGYY5hWvbeBromqzV1dsCNa6OxmcUAAqQOAALRQIBJP9t-1zbIXXIiBA"
     },
     "new_chat_title": {
-        "sticker": "CAACAgIAAxkBAAMGYY5hWvbeBromqzV1dsCNa6OxmcUAAqQOAALRQIBJP9t-1zbIXXIiBA",
-        "description": "HONK"
+        "sticker": "CAACAgIAAx0CUtT85gABA_qJYcZkqtG6DrqJKQcAAS9KIIjIo5PRAAIEAQACuHQEAAHN_C8FZstzYyME",
+        "comment": "Кричащий гусь при смене названия"
     },
     "left_chat_participant": {
-        "sticker": "CAACAgIAAxkBAAMGYY5hWvbeBromqzV1dsCNa6OxmcUAAqQOAALRQIBJP9t-1zbIXXIiBA",
-        "description": "HONK"
+        "sticker": "CAACAgIAAxkBAAMGYY5hWvbeBromqzV1dsCNa6OxmcUAAqQOAALRQIBJP9t-1zbIXXIiBA"
     },
     "/honkhonk": {
         "sticker": "CAACAgIAAxkBAAMGYY5hWvbeBromqzV1dsCNa6OxmcUAAqQOAALRQIBJP9t-1zbIXXIiBA",
