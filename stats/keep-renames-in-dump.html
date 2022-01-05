@@ -1,0 +1,16 @@
+<input type="file" />
+<script>
+  const renamePredicate = ({ action }) => action === 'edit_group_title';
+
+  document.querySelector('input').addEventListener('change', function () {
+    document.body.innerText = 'Loading...';
+    const reader = new FileReader();
+
+    reader.onload = () => {
+      const { messages } = JSON.parse(reader.result);
+      document.body.innerText = JSON.stringify(messages.filter(renamePredicate));
+    };
+
+    reader.readAsText(this.files[0]);
+  });
+</script>

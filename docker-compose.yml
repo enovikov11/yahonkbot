@@ -8,3 +8,10 @@ services:
     environment:
       TELEGRAM_KEY: ${TELEGRAM_KEY}
       DEBUG_DISABLE_COOLDOWN: ${DEBUG_DISABLE_COOLDOWN}
+  stats:
+    build:
+      context: ./stats
+    restart: always
+    volumes:
+      - ./local/results:/results
+      - ./local/titles-from-export:/titles-from-export

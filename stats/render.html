@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        :root {
+            --gap-size: 7px;
+            --pad-size: 10px;
+            --font-size: 25px;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .cards {
+            padding: var(--gap-size);
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--gap-size);
+            font-size: var(--font-size);
+        }
+
+        .card {
+            padding: var(--pad-size);
+            border-radius: var(--pad-size);
+            flex-grow: 1;
+            flex-shrink: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card__title {
+            margin-bottom: var(--pad-size);
+            text-align: center;
+            align-self: center;
+            flex-basis: 100%;
+        }
+
+        .card__date {
+            font-size: 0.7em;
+            flex-grow: 1;
+            margin-right: var(--pad-size);
+            align-self: flex-end;
+        }
+
+        .card__actor {
+            font-size: 0.7em;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards"></div>
+</body>
+
+</html>
