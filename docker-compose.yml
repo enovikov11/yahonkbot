@@ -12,7 +12,6 @@ services:
       STATS_CHAT_ID: ${STATS_CHAT_ID}
       STATS_CAPTION: ${STATS_CAPTION}
       PREMIUM_CHAT_ID: ${PREMIUM_CHAT_ID}
-      PREMIUM_SERVICE_USER_ID: ${PREMIUM_SERVICE_USER_ID}
   stats:
     build:
       context: ./stats

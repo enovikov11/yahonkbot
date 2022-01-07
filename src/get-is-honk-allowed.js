@@ -22,7 +22,7 @@ async function getIsHonkAllowed(update) {
     const chatMember = await api('getChatMember', {
         chat_id: Number(process.env.PREMIUM_CHAT_ID),
         user_id: update.message.from.id
-    }), isPremium = chatMember?.result?.user?.id === update.message.from.id && update.message.from.id !== Number(process.env.PREMIUM_SERVICE_USER_ID);
+    }), isPremium = chatMember?.result?.status === 'member';
 
     if (isPremium) {
         if (timeAfterHonk > 2 * 60000) {
