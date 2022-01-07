@@ -22,7 +22,10 @@ const honk = { sticker: 'CAACAgIAAxkBAAMGYY5hWvbeBromqzV1dsCNa6OxmcUAAqQOAALRQIB
         // Псевдокоманды, не анонсируются
         { command: '/join', answers: [untitledGoose.warning, funkyGoose.see, funkyGoose.party] },
         { command: '/leave', answers: [untitledGoose.knife, untitledGoose.knifes, funkyGoose.angry] },
-        { command: '/rename', answers: [untitledGoose.honk] }
+        { command: '/rename', answers: [untitledGoose.honk] },
+
+        // Сервисные команды
+        { command: '/roll', description: 'Выбрать случайного хонкера чата' }
     ];
 
 module.exports = stickers;
