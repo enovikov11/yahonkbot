@@ -1,4 +1,4 @@
-const api = require('./api');
+const { api } = require('./api');
 
 async function advertiseContributing(update) {
     if (update?.message?.sticker?.file_id) {

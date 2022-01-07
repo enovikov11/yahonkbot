@@ -1,4 +1,4 @@
-const stickers = require('./stickers.js'), api = require('./api');
+const stickers = require('./stickers.js'), { api } = require('./api');
 
 async function anounceCommands() {
     await api('setMyCommands', {

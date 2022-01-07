@@ -1,4 +1,4 @@
-const stickers = require('./stickers.js'), api = require('./api');
+const stickers = require('./stickers.js'), { api } = require('./api');
 
 function getText(update) {
     if (update?.message?.new_chat_member) {

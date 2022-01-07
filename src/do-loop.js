@@ -1,4 +1,4 @@
-const api = require('./api');
+const { api } = require('./api');
 
 async function doLoop(processUpdate) {
     let lastUpdateId = 0, isActive = false;

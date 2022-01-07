@@ -1,6 +1,6 @@
 {
     "name": "yahonkbot",
-    "version": "2.2.0",
+    "version": "2.3.0",
     "description": "",
     "main": "./src/index.js",
     "scripts": {
@@ -9,6 +9,7 @@
     "author": "Evgenii Novikov <enovikov11@yandex.ru>",
     "license": "ISC",
     "dependencies": {
+        "form-data": "4.0.0",
         "node-fetch": "2.0.0"
     }
 }
