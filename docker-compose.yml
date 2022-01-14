@@ -23,3 +23,12 @@ services:
     environment:
       STATS_CHAT_ID: ${STATS_CHAT_ID}
       DEBUG_MAKE_ALL_IMAGES: ${DEBUG_MAKE_ALL_IMAGES}
+  quotes:
+    build:
+      context: ./quotes
+    restart: always
+    environment:
+      QUOTES_TELEGRAM_KEY: ${QUOTES_TELEGRAM_KEY}
+      QUOTES_TICKER: ${QUOTES_TICKER}
+      QUOTES_CHAT_ID: ${QUOTES_CHAT_ID}
+      QUOTES_API_KEY: ${QUOTES_API_KEY}

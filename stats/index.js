@@ -73,7 +73,8 @@ function readTitlesHistory() {
 
     const mergedTitles = [...exportedTitles, ...titlesFromUpdates]
         .filter(({ date, title, actor }) => date && title && actor)
-        .filter(({ title }, i, array) => i === 0 || (array[i - 1].title !== title));
+        .filter(({ title }, i, array) => i === 0 || (array[i - 1].title !== title))
+        .filter(({ actor }) => !/bot$/.test(actor));
 
     return mergedTitles;
 }
