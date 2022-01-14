@@ -86,7 +86,7 @@ async function makeImages() {
 
     while (messages.length > 0) {
         const page = await browser.newPage();
-        await page.setViewport({ width: 1280, height: 1280, deviceScaleFactor: 1.5 });
+        await page.setViewport({ width: 1280, height: 1280, deviceScaleFactor: 1 });
 
         await page.goto('data:text/html,' + html, { waitUntil: 'networkidle2' });
 
@@ -98,6 +98,10 @@ async function makeImages() {
         }
 
         if (process.env.DEBUG_MAKE_ALL_IMAGES === 'true' || (!ids.includes(i) && messages.length > 0 && result.usedCards)) {
+            // сохраняем сюда и список ссылок с id. Перезапускаем инфографику с нуля с #выручатик #переименования
+            // добавил обводку, улучшил качество на мобилках, добавил ссылки на сообщения
+            // https://core.telegram.org/bots/api#sendmessage
+            // https://core.telegram.org/bots/api#formatting-options
             await page.screenshot({ path: `/results/${i}.png` });
         }
 
