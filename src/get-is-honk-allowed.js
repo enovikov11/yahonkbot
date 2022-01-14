@@ -38,7 +38,7 @@ async function getIsHonkAllowed(update) {
 
         await api('sendMessage', {
             chat_id: update.message.chat.id,
-            text: `С honk premium можно пускать гусей каждые 2 минуты. Жертвуешь на благотворительность 500 рублей в месяц? Напиши t.me/enovikov11 и на твой выбор, honk premium достанется тебе или случайному человеку (например если для тебя неприемлимо хвастаться своей благотворительностью)`,
+            text: `С honk premium можно пускать гусей каждые 2 минуты. Сделал гусеугодное дело? Расскажи общественности и запусти опрос о выдаче тебе premium, а потом тегни t.me/enovikov11`,
             disable_web_page_preview: true,
             reply_to_message_id: update?.message?.message_id
         });
