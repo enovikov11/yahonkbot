@@ -1,7 +1,8 @@
 version: "3"
 services:
   yahonkbot:
-    build: .
+    build:
+      context: ./yahonkbot
     restart: always
     volumes:
       - ./logs:/logs
