@@ -5,12 +5,12 @@ services:
       context: ./yahonkbot
     restart: always
     volumes:
-      - ./logs:/logs
+      - ./local/logs:/logs
       - ./local/results:/results
     environment:
       TELEGRAM_KEY: ${TELEGRAM_KEY}
       DEBUG_DISABLE_COOLDOWN: ${DEBUG_DISABLE_COOLDOWN}
-      STATS_CHAT_ID: ${STATS_CHAT_ID}
+      STATS_CHAT_ID: ${CHAT_ID}
       STATS_CAPTION: ${STATS_CAPTION}
       PREMIUM_CHAT_ID: ${PREMIUM_CHAT_ID}
   stats:
@@ -18,11 +18,11 @@ services:
       context: ./stats
     restart: always
     volumes:
-      - ./logs:/logs
+      - ./local/logs:/logs
       - ./local/results:/results
       - ./local/titles-from-export:/titles-from-export
     environment:
-      STATS_CHAT_ID: ${STATS_CHAT_ID}
+      STATS_CHAT_ID: ${CHAT_ID}
       DEBUG_MAKE_ALL_IMAGES: ${DEBUG_MAKE_ALL_IMAGES}
   quotes:
     build:
@@ -31,5 +31,5 @@ services:
     environment:
       QUOTES_TELEGRAM_KEY: ${QUOTES_TELEGRAM_KEY}
       QUOTES_TICKER: ${QUOTES_TICKER}
-      QUOTES_CHAT_ID: ${QUOTES_CHAT_ID}
+      QUOTES_CHAT_ID: ${CHAT_ID}
       QUOTES_API_KEY: ${QUOTES_API_KEY}
