@@ -1,8 +1,7 @@
-FROM node
+FROM denoland/deno:1.17.3
 
 WORKDIR /app
-COPY ./package.json /app/package.json
-RUN npm i
+USER deno
 COPY . /app
 
-CMD npm run start
+CMD ["run", "--allow-net", "--allow-env", "/app/src/index.ts"]
