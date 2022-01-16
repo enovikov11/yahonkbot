@@ -4,4 +4,6 @@ WORKDIR /app
 USER deno
 COPY . /app
 
+RUN deno test
+
 CMD ["run", "--allow-net", "--allow-env", "/app/src/index.ts"]
