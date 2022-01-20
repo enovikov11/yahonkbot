@@ -37,3 +37,15 @@ stats:
 protected: Для обновления хонконфига нужен honk premium
 reconfig: Конфигурация изменена
 `
+
+Рендерилка картинок
+
+/v1/fit
+
+type Title = {
+
+}
+
+type FitInput = {
+  titles: Title[];
+}
