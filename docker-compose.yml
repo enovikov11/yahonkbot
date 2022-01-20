@@ -1,5 +1,11 @@
 version: "3"
 services:
+  bot:
+    build:
+      context: ./bot
+    restart: always
+    environment:
+      - TELEGRAM_API_KEY=${TELEGRAM_API_KEY}
   yahonkbot:
     build:
       context: ./yahonkbot
