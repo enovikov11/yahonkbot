@@ -25,6 +25,8 @@ async function telegramApi(method: string, params: any) {
     });
 }
 
+// TODO: захардкодить chatId
+
 export async function getChatTitle(chatId: number): Promise<string> {
     const chatData = await telegramApi("getChat", { chat_id: chatId });
 
@@ -38,3 +40,5 @@ export async function getChatTitle(chatId: number): Promise<string> {
 export async function setChatTitle(chatId: number, title: string) {
     await telegramApi("setChatTitle", { chat_id: chatId, title });
 }
+
+// send https://core.telegram.org/bots/api#copymessage

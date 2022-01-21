@@ -1,0 +1,40 @@
+#хонконфиг
+
+anounces:
+  /command1: description1
+  /command2: description2
+
+commands:
+  /command1: t.me/c/1/1
+  /command2:
+    - message: t.me/c/1/2
+      weight: 3
+      premium: no
+    - message: t.me/c/1/3
+      premium: yes
+    - message: t.me/c/1/3
+      premium: any
+  /command3: VARIABLE_NAME
+  SERVICE_JOIN:
+    - t.me/c/1/4
+    - t.me/c/1/5
+  SERVICE_LEAVE: Текст
+  SERVICE_RENAME: Переменная VARIABLE_NAME
+  SERVICE_PIN:
+    message: t.me/c/1/1234
+    premium: yes
+  PHOTO_CHANGE: t.me/c/1/1
+
+cooldown:
+  common: 5m
+  premium: 2m
+
+ads:
+  - message: t.me/c/1/100
+    period: 8h
+
+stats:
+  titles: "#title"
+
+protected: Для обновления хонконфига нужен honk premium
+reconfig: Конфигурация изменена

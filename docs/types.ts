@@ -29,3 +29,18 @@ type RenderInput = {
 type Png = any;
 
 type RenderOutput = Png;
+
+
+type Premium = 'yes' | 'no' | 'any';
+
+type Honk = {
+    fromUid: number;
+    command: string;
+    isSuccessful: boolean;
+}
+
+type Db = {
+    honks: Honk[]
+    titles: Title[]
+    config: string;
+}
