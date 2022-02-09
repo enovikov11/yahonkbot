@@ -10,7 +10,7 @@ const honk = { sticker: 'CAACAgIAAxkBAAMGYY5hWvbeBromqzV1dsCNa6OxmcUAAqQOAALRQIB
         see: { sticker: 'CAACAgIAAxkBAAOgYccTpvEztmdQ5osAAR2e_Kd-orx1AAJcAANSiZEjVoQjitwpmnQjBA' },
         party: { sticker: 'CAACAgIAAxkBAAOiYccTtKvcL6ulN3B2VEb0WFgEvKIAAkAAA1KJkSM1XLo_etZCiSME' }
     },
-    stonksGoose = { sticker: 'CAACAgIAAx0CUtT85gABBPA5YgPqJGvLjFykL-90Tv9bfQ9tTqoAAqQOAALRQIBJP9t-1zbIXXIjBA' },
+    stonksGoose = { sticker: 'CAACAgIAAx0CUtT85gABBPA2YgPphip4QFM0m1Ve-YH0bNcbqnIAAqsTAAKDB1FLQLl2uQ_Jh8QjBA' },
     z1 = { sticker: 'CAACAgIAAxkBAAOmYccVvcLVPGaHMc1xpILb6zo1ubEAAukCAAL6n_EYZHuPCSxqegwjBA' },
 
     stickers = [
