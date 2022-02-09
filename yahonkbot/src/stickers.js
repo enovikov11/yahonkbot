@@ -10,6 +10,7 @@ const honk = { sticker: 'CAACAgIAAxkBAAMGYY5hWvbeBromqzV1dsCNa6OxmcUAAqQOAALRQIB
         see: { sticker: 'CAACAgIAAxkBAAOgYccTpvEztmdQ5osAAR2e_Kd-orx1AAJcAANSiZEjVoQjitwpmnQjBA' },
         party: { sticker: 'CAACAgIAAxkBAAOiYccTtKvcL6ulN3B2VEb0WFgEvKIAAkAAA1KJkSM1XLo_etZCiSME' }
     },
+    stonksGoose = { sticker: 'CAACAgIAAx0CUtT85gABBPA5YgPqJGvLjFykL-90Tv9bfQ9tTqoAAqQOAALRQIBJP9t-1zbIXXIjBA' },
     z1 = { sticker: 'CAACAgIAAxkBAAOmYccVvcLVPGaHMc1xpILb6zo1ubEAAukCAAL6n_EYZHuPCSxqegwjBA' },
 
     stickers = [
@@ -17,6 +18,7 @@ const honk = { sticker: 'CAACAgIAAxkBAAMGYY5hWvbeBromqzV1dsCNa6OxmcUAAqQOAALRQIB
         { command: '/honkhonk', answers: [honk], description: 'HONK' },
         { command: '/roll', answers: [honk], description: 'HONK' },
         { command: '/adhonk', answers: [honk], description: 'HONK' },
+        { command: '/stonks', answers: [stonksGoose], description: 'HONK' },
         { command: '/z1', answers: [z1], description: 'z1' },
 
         // Псевдокоманды, не анонсируются
